@@ -1,0 +1,14 @@
+.movieList {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 20px;
+	width: 100%;
+	box-sizing: border-box;
+	position: relative;
+	min-height: 120px;
+	h1 {
+		width: 100%;
+		position: absolute;
+		width: 100%;
+	}
+}

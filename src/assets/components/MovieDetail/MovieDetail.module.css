@@ -1,0 +1,44 @@
+.movieDetail {
+	text-align: left;
+	background-color: #1c1c1c;
+	color: #ffffff;
+	padding: 20px;
+	h2 {
+		margin-top: 0;
+		font-size: 2rem;
+		margin-bottom: 20px;
+	}
+	.split {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		.side {
+			p,
+			ul {
+				margin: 0;
+				line-height: 1.6;
+			}
+			p {
+				margin-bottom: 10px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+			flex: 1;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.movieDetail {
+		.split {
+			flex-direction: row;
+			gap: 40px;
+			.side {
+				&:first-child {
+					max-width: max-content;
+				}
+			}
+		}
+	}
+}
